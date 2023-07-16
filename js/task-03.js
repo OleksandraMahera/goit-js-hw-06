@@ -23,5 +23,12 @@ const galleryMarkup = images
 
 ul.insertAdjacentHTML("beforeend", galleryMarkup); 
 
+ul.classList.add("gallery-grid");
+
+const lis = ul.querySelectorAll("li");
+lis.forEach(li => li.classList.add("gallery-item"));
+
+const imgs = ul.querySelectorAll("img");
+imgs.forEach(img => img.classList.add("gallery-img"));
 
 
